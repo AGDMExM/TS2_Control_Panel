@@ -1,0 +1,51 @@
+{
+  "ServerList": [
+    "\u0421\u0435\u0440\u0432\u0435\u0440\u0430",
+    "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0441\u0435\u0440\u0432\u0435\u0440"
+  ],
+  "EditorList": [
+    "\u0420\u0435\u0434\u0430\u043A\u0442\u043E\u0440",
+    "\u0420\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u0442\u0440\u0438\u0433\u0433\u0435\u0440\u043E\u0432",
+    "\u0420\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u0442\u0440\u0435\u0439\u0434\u0435\u0440\u043E\u0432"
+  ],
+  "UtilitiesList": [
+    "\u0423\u0442\u0438\u043B\u0438\u0442\u044B",
+    "\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440 \u0441\u0435\u0442\u043A\u0438",
+    "\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440 \u0443\u0441\u043B\u043E\u0432\u0438\u0439"
+  ],
+  "DefaultName": "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043D\u043E\u0432\u043E\u0433\u043E \u0442\u0440\u0438\u0433\u0433\u0435\u0440\u0430",
+  "ExchangesList": [
+    "Binance"
+  ],
+  "MarketList": [
+    "Futures"
+  ],
+  "MoneyList": [
+    "BTC",
+    "ETH",
+    "BNB",
+    "SOL"
+  ],
+  "MoneyQuoteList": [
+    "USDT"
+  ],
+  "ListTypes": [
+    "\u0411\u0435\u043B\u044B\u0439",
+    "\u0427\u0451\u0440\u043D\u044B\u0439"
+  ],
+  "DefaultIndicatorCalculationPeriod": 3000,
+  "DefaultPeriodUpdatingMarketData": 3600000,
+  "DefaultMinimumTradingVolume": 1000000,
+  "DefaultStartTraderExpression": "RSI(\u00275m\u0027, 14) \u003C 40 and RSI(\u002715m\u0027, 14) \u003C 50 and RSI(\u00271h\u0027, 14) \u003C 55",
+  "DefaultFilterExpression": "volatility(\u00275m\u0027, 10) \u003C 2.0",
+  "DefaultSortExpression": "volatility(\u00275m\u0027, 10)",
+  "SortTypes": [
+    "\u041F\u043E \u0443\u0431\u044B\u0432\u0430\u043D\u0438\u044E",
+    "\u041F\u043E \u0432\u043E\u0437\u0440\u0430\u0441\u0442\u0430\u043D\u0438\u044E"
+  ],
+  "DefaultBotLimit": 1,
+  "Actions": [
+    "\u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C"
+  ],
+  "DefaultLaunchObject": "Target"
+}

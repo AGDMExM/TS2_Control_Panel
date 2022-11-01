@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TS2_Control_Panel.MainPage">
+    <VerticalStackLayout BackgroundColor="#DFDFDF" x:Name="mainVerticalStack">
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button x:Name="homeButton" Text="Домой" BorderWidth="1"
+                    BackgroundColor="LightGray" TextColor="Black"
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Clicked="HomeButton_OnClicked" />
+
+            <Picker x:Name="serverPicker"
+                    FontSize="20"
+                    VerticalOptions = "Center"
+                    TextColor="Black"
+                    BackgroundColor="LightGray"
+                    SelectedIndexChanged="ServerPickerSelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Добавить сервер</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker x:Name="editorPicker"
+                    FontSize="20"
+                    VerticalOptions = "Center"
+                    TextColor="Black"
+                    BackgroundColor="LightGray"
+                SelectedIndexChanged="EditorPickerSelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Редактор триггеров</x:String>
+                    <x:String>Редактор трейдеров</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button x:Name="indicatorButton" Text="Индикаторы" BorderWidth="1"
+                    BackgroundColor="LightGray" TextColor="Black"
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Clicked="IndicatorButton_OnClicked" />
+
+            <Button x:Name="statisticButton" Text="Статистика" BorderWidth="1"
+                    BackgroundColor="LightGray" TextColor="Black"
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Clicked="StatisticButton_OnClicked" />
+
+            <Button x:Name="settingsButton" Text="Настройки" BorderWidth="1"
+                    BackgroundColor="LightGray" TextColor="Black"
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Clicked="SettingsButton_OnClicked" />
+
+            <Picker x:Name="utilitiesPicker"
+                    FontSize="20"
+                    VerticalOptions = "Center"
+                    TextColor="Black"
+                    BackgroundColor="LightGray"
+                SelectedIndexChanged="UtilitiesPickerSelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Конструктор сетки</x:String>
+                    <x:String>Конструктор условий</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button x:Name="logButton" Text="Лог" BorderWidth="1"
+                    BackgroundColor="LightGray" TextColor="Black"
+                    HorizontalOptions="Center" VerticalOptions="Center"
+                    Clicked="LogButton_OnClicked" />
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

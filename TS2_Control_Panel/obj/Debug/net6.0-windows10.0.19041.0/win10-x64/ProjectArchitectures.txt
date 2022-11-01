@@ -1,0 +1,1 @@
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\TS2_Control_Panel.csproj;x64
