@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TS2_Control_Panel"
+             x:Class="TS2_Control_Panel.Pages.CreateNewTriggerPage"
+             Title="CreateNewTriggerPage">
+
+    <ContentPage.BindingContext>
+        <local:CreateNewTriggerViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <DataTemplate x:Key="ValueTemplate">
+            <Picker>
+                
+            </Picker>
+        </DataTemplate>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout>
+        <Grid
+            RowDefinitions="Auto,*"
+            VerticalOptions="Fill">
+            <Label 
+                Text="Добавление нового триггера"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                FontSize="20"/>
+            <ScrollView 
+                WidthRequest="500" 
+                Orientation="Vertical"
+                HeightRequest="400"
+                Grid.Row="1">
+                <StackLayout
+                    Orientation="Vertical">
+                    <!--  Start -->
+                    <Label 
+                        Text="Имя триггера"
+                        HorizontalOptions="Start"/>
+                    <Entry 
+                        x:Name="NameTriggerEntry" 
+                        Placeholder="Name"/>
+
+                    <!-- API Settings -->
+                    <Label 
+                        Text="API Key"
+                        HorizontalOptions="Start"/>
+                    <Entry 
+                        x:Name="ApiKeyEntry" 
+                        Placeholder="API Key"/>
+
+                    <Label 
+                        Text="API Secret"
+                        HorizontalOptions="Start"/>
+                    <Entry 
+                        x:Name="ApiSecretEntry" 
+                        Placeholder="API Secret"/>
+
+                    <!-- Exchange Settings -->
+                    <Label 
+                        Text="Биржа"
+                        HorizontalOptions="Start"/>
+                    <Picker 
+                        x:Name="ExchangePicker"
+                        ItemsSource="{Binding ValuesForInterface.Exchanges}"
+                        ItemDisplayBinding="{Binding [ru]}"/>
+
+                    <!-- 
+                    <Label 
+                        Text="Маркет"
+                        HorizontalOptions="Start"/>
+                    <Picker 
+                        x:Name="MarketPicker"
+                        ItemsSource="{Binding ValuesForInterface.}"/>
+                    -->
+
+                    <HorizontalStackLayout>
+                        <CheckBox 
+                            x:Name="UseTesstnetCheckBox"
+                            IsChecked="True"/>
+                        <Label 
+                            Text="Использовать тестнет"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"/>
+                    </HorizontalStackLayout>
+
+                    <!-- List Money Settings -->
+                    <Label 
+                        Text="Список монет"
+                        HorizontalOptions="Start"/>
+                    <Editor 
+                        x:Name="ListMoneyEditor"
+                        AutoSize="TextChanges"
+                        Text="{Binding ValuesForInterface.Moneys}"/>
+
+                    <Label 
+                        Text="Список монет"
+                        HorizontalOptions="Start"/>
+                    <Entry 
+                        x:Name="MoneyQuoteEntry"
+                        Text="{Binding ValuesForInterface.QuoteMoney}"/>
+
+                    <Label 
+                        Text="Тип списка"
+                        HorizontalOptions="Start"/>
+                    <Picker 
+                        x:Name="TypeListPicker"
+                        ItemsSource="{Binding ValuesForInterface.ListTypes}"
+                        ItemDisplayBinding="{Binding [ru]}"/>
+
+                    <!-- Period Settings -->
+                    <Label 
+                        Text="Период рассчета индикаторов (миллисекунды)"
+                        HorizontalOptions="Start"/>
+                    <HorizontalStackLayout>
+                        <Entry 
+                            Text="{Binding Value, Source={x:Reference IndicatorCalculationPeriodStepper} }"/>
+                        <Stepper 
+                            x:Name="IndicatorCalculationPeriodStepper"
+                            Minimum="1"
+                            Maximum="2000000000"
+                            Value="3000"/>
+                    </HorizontalStackLayout>
+
+                    <Label 
+                        Text="Период обновления данных маркета (миллисекунды)"
+                        HorizontalOptions="Start"/>
+                    <HorizontalStackLayout>
+                        <Entry 
+                            Text="{Binding Value, Source={x:Reference PeriodUpdatingMarketDataStepper} }"/>
+                        <Stepper 
+                            x:Name="PeriodUpdatingMarketDataStepper"
+                            Minimum="1"
+                            Maximum="2000000000"
+                            Value="3600000"/>
+                    </HorizontalStackLayout>
+
+                    <!-- Filter and Expression Settings -->
+                    <Label 
+                        Text="Минимальный обьем торгов"
+                        HorizontalOptions="Start"/>
+                    <HorizontalStackLayout>
+                        <Entry 
+                            Text="{Binding Value, Source={x:Reference MinimumTradingVolumeStepper} }"/>
+                        <Stepper 
+                            x:Name="MinimumTradingVolumeStepper"
+                            Minimum="1"
+                            Maximum="2000000000"
+                            Value="1000000"/>
+                    </HorizontalStackLayout>
+
+                    <Label 
+                        Text="Выражение для старта трейдера"
+                        HorizontalOptions="Start"/>
+                    <Editor 
+                        x:Name="StartTraderExpressionEditor"
+                        AutoSize="TextChanges"
+                        Text="{Binding ValuesForInterface.StartTradedrExpression}"/>
+
+                    <Label 
+                        Text="Выражение фильтра"
+                        HorizontalOptions="Start"/>
+                    <Editor 
+                        x:Name="FilterExpressionEditor"
+                        AutoSize="TextChanges"
+                        Text="{Binding ValuesForInterface.FilterExpression}"/>
+
+                    <Label 
+                        Text="Выражение сорировки"
+                        HorizontalOptions="Start"/>
+                    <Editor 
+                        x:Name="SortExpressionEditor"
+                        AutoSize="TextChanges"
+                        Text="{Binding ValuesForInterface.SortExpression}"/>
+
+                    <Label 
+                        Text="Тип сортировки"
+                        HorizontalOptions="Start"/>
+                    <Picker 
+                        x:Name="SortTypePicker"                        
+                        ItemsSource="{Binding ValuesForInterface.SortTypes}"
+                        ItemDisplayBinding="{Binding [ru]}"/>
+
+                    <!-- Bot Limit Settings -->
+                    <Label 
+                        Text="Лимит ботов"
+                        HorizontalOptions="Start"/>
+                    <HorizontalStackLayout>
+                        <Entry 
+                            Text="{Binding Value, Source={x:Reference BotLimitStepper} }"/>
+                        <Stepper 
+                            x:Name="BotLimitStepper"
+                            Minimum="1"
+                            Maximum="2000000000"
+                            Value="1"/>
+                    </HorizontalStackLayout>
+
+                    <!-- Action Settings -->
+                    <Label 
+                        Text="Действие"
+                        HorizontalOptions="Start"/>
+                    <Picker 
+                        x:Name="ActionPicker"
+                        ItemsSource="{Binding ValuesForInterface.Actions}"
+                        ItemDisplayBinding="{Binding [ru]}"/>
+
+                    <Label 
+                        Text="Обьект запуска"
+                        HorizontalOptions="Start"/>
+                    <Entry 
+                        x:Name="LaunchObjectEntry"
+                        Placeholder="Target"/>
+
+                    <!-- End -->
+                    <Button 
+                        x:Name="SaveButton"
+                        Text="Сохранить"
+                        Clicked="SaveButton_Clicked"
+                        Command="{Binding SaveTriggerCommand}"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

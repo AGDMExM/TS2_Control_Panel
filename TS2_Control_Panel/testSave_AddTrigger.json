@@ -1,0 +1,20 @@
+{
+  "Name": "asd",
+  "ApiKey": "asd",
+  "ApiSecret": "asd",
+  "Exchange": "binance",
+  "UseTestnet": true,
+  "Money": "BTC,ETH,BNB,SOL",
+  "MoneyQuote": "USDT",
+  "TypeList": "white",
+  "IndicatorCalculationPeriod": 3000,
+  "PeriodUpdatingMarketData": 3600000,
+  "MinimumTradingVolume": 1000000,
+  "StartTraderExpression": "RSI(\u00275m\u0027, 14) \u003C 40 and RSI(\u002715m\u0027, 14) \u003C 50 and RSI(\u00271h\u0027, 14) \u003C 55",
+  "FilterExpression": "volatility(\u00275m\u0027, 10) \u003C 2.0",
+  "SortExpression": "volatility(\u00275m\u0027, 10)",
+  "SortType": "desc",
+  "BotLimit": 1,
+  "Action": "start",
+  "LaunchObject": "asdasd"
+}

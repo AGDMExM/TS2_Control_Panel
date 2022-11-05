@@ -2,13 +2,100 @@
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TS2_Control_Panel"
+             xmlns:page="clr-namespace:TS2_Control_Panel.Pages"
              x:Class="TS2_Control_Panel.App">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/DefaultTheme.xaml" />
+                <!-- 
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                -->
+                
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
+
+    <Application.MainPage>
+        <!--
+        <x:Arguments>
+            <page:TriggerPage  BindingContext="{local:TriggerViewModel}">
+                <x:Arguments>
+                    <model:Settings>{Binding}</model:Settings>
+                </x:Arguments>
+            </page:TriggerPage>
+            <model:Settings>{Bind}</model:Settings>
+        </x:Arguments>
+        <p:DeviceListPage ViewModel="{Binding Devices}">
+            x:Arguments>
+                    <vmd:DeviceListVm>{Binding Devices}</vmd:DeviceListVm>
+                </x:Arguments
+        </p:DeviceListPage>
+        -->
+        <!--
+        <page:CreateNewTriggerPage>
+            <x:Arguments>
+                <x:Boolean>IsNewTrigger</x:Boolean>
+            </x:Arguments>
+        </page:CreateNewTriggerPage>
+        <page:CreateNewTriggerPage IsNewTrigger="true">
+        -->
+        <Shell>
+            <TabBar>
+                <Tab Title="Домой">
+                    <!-- 
+                    <page:CreateNewTriggerPage>
+                        <x:Arguments>
+                            <x:Boolean>true</x:Boolean>
+                        </x:Arguments>
+                    </page:CreateNewTriggerPage>
+                    -->
+                    
+                    <!-- ShellContent не нужен, когда есть тег с page -->
+                    <ShellContent 
+                        ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+                <Tab Title="Сервера">
+                    <!-- generate list of servers, default add new server --> 
+                    
+                    <!-- create one page for all servers (create new and edit old) -->
+                    <ShellContent 
+                        Title="Добавить сервер"
+                        ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+                <Tab Title="Редактор">
+                    
+                    <ShellContent 
+                        Title="Редактор триггеров" 
+                        ContentTemplate="{DataTemplate page:TriggerPage}"/>
+                    <ShellContent 
+                        Title="Редактор трейдеров"
+                        ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+                <Tab Title="Индикаторы">
+                    <ShellContent ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+                <Tab Title="Статистика">
+                    <ShellContent ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+                <Tab Title="Настройки">
+                    <ShellContent ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+                <Tab Title="Утилиты">
+                    <ShellContent 
+                        Title="Конструктор сетки" 
+                        ContentTemplate="{DataTemplate page:ServerPage}"/>
+                    <ShellContent 
+                        Title="Конструктор условий"
+                        ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+                <Tab Title="Лог">
+                    <ShellContent ContentTemplate="{DataTemplate page:ServerPage}"/>
+                </Tab>
+            </TabBar>
+
+
+        </Shell>
+    </Application.MainPage>
 </Application>

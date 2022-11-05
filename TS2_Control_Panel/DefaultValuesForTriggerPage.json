@@ -1,0 +1,21 @@
+{
+  "Exchanges": [
+    { "ru": "Binance", "val": "binance" }
+  ],
+  "Moneys": "BTC,ETH,BNB,SOL",
+  "QuoteMoney": "USDT",
+  "ListTypes": [
+    { "ru": "Чёрный", "val": "black" },
+    { "ru": "Белый", "val": "white" }
+  ],
+  "StartTradedrExpression": "RSI('5m', 14) < 40 and RSI('15m', 14) < 50 and RSI('1h', 14) < 55",
+  "FilterExpression": "volatility('5m', 10) < 2.0",
+  "SortExpression": "volatility('5m', 10)",
+  "SortTypes": [
+    { "ru": "По убыванию", "val": "desc" },
+    { "ru": "По возрастанию", "val": "asc" }
+  ],
+  "Actions": [
+    { "ru": "Запустить", "val": "start" }
+  ]
+}

@@ -1,32 +1,41 @@
 {
-  "ServerList": [
-    "\u0421\u0435\u0440\u0432\u0435\u0440\u0430",
-    "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0441\u0435\u0440\u0432\u0435\u0440"
+  "Servers": [],
+  "Triggers": [
+    {
+      "Name": "Name1",
+      "ApiKey": "ApiKey",
+      "ApiSecret": "ApiSecret",
+      "Exchange": "exchange",
+      "Market": "market",
+      "UseTestnet": false,
+      "Money": "money",
+      "MoneyQuote": "quote",
+      "TypeList": "typeList",
+      "IndicatorCalculationPeriod": 3000,
+      "PeriodUpdatingMarketData": 360000,
+      "MinimumTradingVolume": 10000,
+      "StartTraderExpression": "startExpression",
+      "FilterExpression": "filterExpression",
+      "SortExpression": "sortExpression",
+      "SortType": "sortType",
+      "BotLimit": 10,
+      "Action": "action",
+      "LaunchObject": "launchObject"
+    }
   ],
-  "EditorList": [
-    "\u0420\u0435\u0434\u0430\u043A\u0442\u043E\u0440",
-    "\u0420\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u0442\u0440\u0438\u0433\u0433\u0435\u0440\u043E\u0432",
-    "\u0420\u0435\u0434\u0430\u043A\u0442\u043E\u0440 \u0442\u0440\u0435\u0439\u0434\u0435\u0440\u043E\u0432"
-  ],
-  "UtilitiesList": [
-    "\u0423\u0442\u0438\u043B\u0438\u0442\u044B",
-    "\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440 \u0441\u0435\u0442\u043A\u0438",
-    "\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440 \u0443\u0441\u043B\u043E\u0432\u0438\u0439"
-  ],
-  "DefaultName": "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u043D\u043E\u0432\u043E\u0433\u043E \u0442\u0440\u0438\u0433\u0433\u0435\u0440\u0430",
-  "ExchangesList": [
+  "Exchanges": [
     "Binance"
   ],
-  "MarketList": [
+  "Markets": [
     "Futures"
   ],
-  "MoneyList": [
+  "Moneys": [
     "BTC",
     "ETH",
     "BNB",
     "SOL"
   ],
-  "MoneyQuoteList": [
+  "MoneyQuotes": [
     "USDT"
   ],
   "ListTypes": [

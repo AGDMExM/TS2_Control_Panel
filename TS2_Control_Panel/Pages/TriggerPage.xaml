@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- xmlns:m="clr-namespace:TS2_Control_Panel.Models" -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TS2_Control_Panel"
+             x:Class="TS2_Control_Panel.Pages.TriggerPage"
+             Title="TriggerPage">
+    
+    <ContentPage.BindingContext>
+        <local:TriggerViewModel />
+    </ContentPage.BindingContext>
+    
+    <VerticalStackLayout>
+        <Button 
+            x:Name="button_AddNewTrigger"
+            Text="Добавить новый триггер"
+            HorizontalOptions="Center"
+            Command="{Binding AddNewTriggerCommand}"
+            CommandParameter="{Binding Settings}"/>
+
+        <ScrollView x:Name="listTriggers" WidthRequest="500">
+            <ListView ItemsSource="{Binding Triggers}" HorizontalOptions="Center"/>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>
