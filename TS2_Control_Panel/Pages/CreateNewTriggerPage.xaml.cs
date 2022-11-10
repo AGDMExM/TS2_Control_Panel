@@ -1,5 +1,4 @@
-using System.Diagnostics;
-using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace TS2_Control_Panel.Pages;
 
@@ -39,11 +38,26 @@ public partial class CreateNewTriggerPage : ContentPage//, IQueryAttributable
             InitializeComponent();
         }*/
 
-    private void SaveButton_Clicked(System.Object sender, System.EventArgs e)
+    private void Button_Save_Clicked(System.Object sender, System.EventArgs e)
     {
-        Debug.WriteLine("SaveTrigger Command");
+        string message = CheckRequiredEntry();
+        if (message != null)
+        {
+            DisplayAlert("Ошибка", $"{message}", "ОK");
+            return;
+        } 
+
         var response = TS2_Control_Panel.WebRequest.AddTrigger(GetTriggerFromForm());
-        Debug.WriteLine(response.Result);
+
+        var result = JsonConvert.DeserializeObject<Dictionary<string, object>>(response.Content.ReadAsStringAsync().Result);
+
+        if ((bool)result["success"] == true)
+        {
+            Shell.Current.Navigation.PopAsync();
+            return;
+        }
+
+        DisplayAlert("Ошибка", $"Триггер не добавлен \n {(string)result["message"]}", "ОK");
     }
 
     private Models.Trigger GetTriggerFromForm()
@@ -67,6 +81,48 @@ public partial class CreateNewTriggerPage : ContentPage//, IQueryAttributable
             (int)BotLimitStepper.Value,
             (ActionPicker.SelectedItem as Dictionary<string, string>)["val"],
             LaunchObjectEntry.Text);
+    }
+
+    private string CheckRequiredEntry()
+    {
+        string res = new ("");
+
+        if (NameTriggerEntry.Text is null || NameTriggerEntry.Text.Replace(" ", "") == "")
+            res += "Name string is empty \n";
+
+        if (ApiKeyEntry.Text is null || ApiKeyEntry.Text.Replace(" ", "") == "")
+            res += "API KEY string is empty \n";
+
+        if (ApiSecretEntry.Text is null || ApiSecretEntry.Text.Replace(" ", "") == "")
+            res += "API Secret string is empty \n";
+
+        if (ListMoneyEditor.Text is null || ListMoneyEditor.Text.Replace(" ", "") == "")
+            res += "Moneys string is empty \n";
+
+        if (MoneyQuoteEntry.Text is null || MoneyQuoteEntry.Text.Replace(" ", "") == "")
+            res += "Money quote string is empty \n";
+
+        if (StartTraderExpressionEditor.Text is null || StartTraderExpressionEditor.Text.Replace(" ", "") == "")
+            res += "Start Trader Expression string is empty \n";
+
+        if (FilterExpressionEditor.Text is null || FilterExpressionEditor.Text.Replace(" ", "") == "")
+            res += "Filter Expression is empty \n";
+
+        if (SortExpressionEditor.Text is null || SortExpressionEditor.Text.Replace(" ", "") == "")
+            res += "Sort Expression is empty \n";
+
+        if (LaunchObjectEntry.Text is null || LaunchObjectEntry.Text.Replace(" ", "") == "")
+            res += "Launch Object is empty \n";
+
+        if (res == "")
+            res = null;
+
+        return res;
+    }
+
+    private void Button_ComeBack_Clicked(System.Object sender, System.EventArgs e)
+    {
+        Shell.Current.Navigation.PopAsync();
     }
 
     /*public void ApplyQueryAttributes(IDictionary<string, object> query)

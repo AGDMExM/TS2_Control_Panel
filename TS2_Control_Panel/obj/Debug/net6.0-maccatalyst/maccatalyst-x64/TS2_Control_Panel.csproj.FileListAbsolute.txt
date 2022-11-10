@@ -253,3 +253,5 @@ C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\TS2_Control_Panel.pdb
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\TS2_Control_Panel.genruntimeconfig.cache
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ref\TS2_Control_Panel.dll
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\delete.png
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\edit.png

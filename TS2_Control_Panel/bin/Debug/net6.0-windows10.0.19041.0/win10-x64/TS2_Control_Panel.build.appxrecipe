@@ -934,6 +934,12 @@
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.jpg">
+      <PackagePath>delete.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.png">
+      <PackagePath>delete.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -948,6 +954,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.jpg">
+      <PackagePath>edit.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.png">
+      <PackagePath>edit.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

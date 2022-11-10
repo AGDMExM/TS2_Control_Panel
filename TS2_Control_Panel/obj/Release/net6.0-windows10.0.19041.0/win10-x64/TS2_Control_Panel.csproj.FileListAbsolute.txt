@@ -343,3 +343,6 @@ C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Release\net6.
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Release\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Release\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Release\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\bin\Release\net6.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.png
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Release\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.png

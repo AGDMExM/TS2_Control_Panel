@@ -1,25 +1,98 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- xmlns:m="clr-namespace:TS2_Control_Panel.Models" -->
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TS2_Control_Panel"
+             xmlns:converter="clr-namespace:TS2_Control_Panel.Converters"
              x:Class="TS2_Control_Panel.Pages.TriggerPage"
              Title="TriggerPage">
-    
+
     <ContentPage.BindingContext>
         <local:TriggerViewModel />
     </ContentPage.BindingContext>
-    
-    <VerticalStackLayout>
-        <Button 
-            x:Name="button_AddNewTrigger"
-            Text="Добавить новый триггер"
-            HorizontalOptions="Center"
-            Command="{Binding AddNewTriggerCommand}"
-            CommandParameter="{Binding Settings}"/>
 
-        <ScrollView x:Name="listTriggers" WidthRequest="500">
-            <ListView ItemsSource="{Binding Triggers}" HorizontalOptions="Center"/>
-        </ScrollView>
-    </VerticalStackLayout>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:TriggerConverterForCommandParameter x:Key="TriggerConverterForCommandParameter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView
+        WidthRequest="500" 
+        Orientation="Vertical">
+        <StackLayout
+            Padding="20"
+            Orientation="Vertical">
+
+            <Grid
+                ColumnDefinitions="*,*">
+                <Button
+                    x:Name="button_RefreshTriggers"
+                    Text="Обновить"
+                    Grid.Column="0"
+                    HorizontalOptions="End"
+                    Command="{Binding RefreshTriggersCommand}"
+                    CommandParameter="{Binding Triggers}"/>
+                <Button 
+                    x:Name="button_AddNewTrigger"
+                    Text="Добавить"
+                    Grid.Column="1"
+                    HorizontalOptions="Start"
+                    Clicked="Button_AddNewTrigger_Clicked"/>
+            </Grid>
+            
+
+            <ListView 
+                x:Name="triggersListView"
+                ItemsSource="{x:Binding Triggers}" 
+                HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid
+                                x:Name="grid"
+                                HorizontalOptions="Center"
+                                ColumnDefinitions="200,*,*">
+
+                                <Label 
+                                    x:Name="label"
+                                    Grid.Column="0"
+                                    HeightRequest="50"
+                                    VerticalTextAlignment="Center"
+                                    Text="{Binding Name}"/>
+                                <ImageButton 
+                                    x:Name="button_EditTrigger"
+                                    Grid.Column="1"
+                                    Source="edit.png"
+                                    HorizontalOptions="End"
+                                    Padding="10"
+                                    HeightRequest="{Binding Height, Source={x:Reference label}}"
+                                    WidthRequest="{Binding Height, Source={x:Reference label}}"
+                                    Clicked="Button_EditTrigger_Clicked"/>
+                                <ImageButton 
+                                    x:Name="button_DeleteTrigger"
+                                    Grid.Column="2"
+                                    Source="delete.png"
+                                    HorizontalOptions="End"
+                                    Padding="10"
+                                    HeightRequest="{Binding Height, Source={x:Reference label}}"
+                                    WidthRequest="{Binding Height, Source={x:Reference label}}"
+                                    Clicked="Button_DeleteTrigger_Clicked">
+                                    <!--
+                                    Command="{Binding Source={x:Reference triggersListView}, Path=BindingContext.DeleteTriggerCommand}">
+                                    <ImageButton.CommandParameter>
+                                        <MultiBinding Converter="{StaticResource TriggerConverterForCommandParameter}">
+                                            <Binding Source="{x:Reference triggersListView}" Path="ItemsSource"/>
+                                            <Binding Path="Trigger.Name"/>
+                                        </MultiBinding>
+                                    </ImageButton.CommandParameter>
+                                
+                                    -->
+                                </ImageButton>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

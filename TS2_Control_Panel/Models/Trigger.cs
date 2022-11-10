@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Newtonsoft.Json.Linq;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace TS2_Control_Panel.Models
 {
@@ -74,6 +71,40 @@ namespace TS2_Control_Panel.Models
             BotLimit = botLimit;
             Action = action;
             LaunchObject = launchObject;
+        }
+
+        public static List<Trigger> GetTriggersFromDictionaryAPI(Dictionary<string, object> triggersDict)
+        {
+            if (triggersDict is null) 
+                return null;
+
+            List<Trigger> res = new(); 
+            foreach (string name in triggersDict.Keys)
+            {
+                var config = (triggersDict[name] as JObject).ToObject<Dictionary<string, object>>();
+                var intervals = (config["intervals"] as JObject).ToObject<Dictionary<string, object>>();
+                res.Add(new Trigger(
+                    name,
+                    (string)config["apiKey"],
+                    (string)config["apiSecret"],
+                    (string)config["exchange"],
+                    (bool)config["useSandbox"],
+                    (config["baseList"] as List<string>),
+                    (string)config["quoteAsset"],
+                    (string)config["listType"],
+                    Convert.ToInt64(intervals["indicatorCalculate"]),
+                    Convert.ToInt64(intervals["updateList"]),
+                    Convert.ToInt64(config["volumeFilter"]),
+                    (string)config["triggerExpression"],
+                    (string)config["filterExpression"],
+                    (string)config["sortExpression"],
+                    (string)config["sortType"],
+                    Convert.ToInt32(config["botLimit"]),
+                    (string)config["action"],
+                    (string)config["target"]));
+            }
+
+            return res;
         }
 
         public void OnPropertyChanged([CallerMemberName] string name = "") =>

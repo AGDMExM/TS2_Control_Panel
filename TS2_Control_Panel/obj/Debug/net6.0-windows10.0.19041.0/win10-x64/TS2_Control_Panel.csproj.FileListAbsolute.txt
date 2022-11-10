@@ -344,3 +344,7 @@ C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1022.47605.dll
 C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.jpg
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.jpg
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.png
+C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.png

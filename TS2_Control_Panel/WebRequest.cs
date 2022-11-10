@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using System.Net.Http.Json;
+using Newtonsoft.Json;
 
 namespace TS2_Control_Panel
 {
@@ -16,17 +17,21 @@ namespace TS2_Control_Panel
         private static readonly HttpClient client = new HttpClient();
         private static readonly string Url = "http://localhost:2031";
 
-        private static async Task<HttpResponseMessage> Send(string path, Dictionary<string, object> data)
+        private static HttpResponseMessage Send(string path, Dictionary<string, object> data = null)
         {
             JsonContent content = JsonContent.Create(data);
             
-            var response = await client.PostAsync(Url + path, content);
-            //Person? person = await response.Content.ReadFromJsonAsync<Person>();
+            var result = client.PostAsync(Url + path, content).Result;
 
-            return response;
+            return result;
         }
 
-        public static Task<HttpResponseMessage> AddTrigger(Models.Trigger trigger)
+        private static HttpResponseMessage Get(string path)
+        {
+            return client.GetAsync(Url + path).Result;
+        }
+
+        public static HttpResponseMessage AddTrigger(Models.Trigger trigger)
         {
             var config = new Dictionary<string, object>()
             {
@@ -62,6 +67,21 @@ namespace TS2_Control_Panel
             };
 
             return Send("/triggers/addTrigger", data);
+        }
+
+        public static HttpResponseMessage GetTriggersDictionary()
+        {
+            return Get("/triggers/getTriggers");
+        }
+
+        public static HttpResponseMessage DeleteTrigger(string name)
+        {
+            var data = new Dictionary<string, object>()
+            {
+                { "trigger", name }
+            };
+
+            return Send("/triggers/deleteTrigger", data);
         }
     }
 }

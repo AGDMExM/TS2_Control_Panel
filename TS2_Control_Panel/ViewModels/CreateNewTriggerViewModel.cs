@@ -15,24 +15,22 @@ namespace TS2_Control_Panel
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public IView View { get; set; }
-
         public ValuesForBindingTriggerPage ValuesForInterface { get; set; }
 
-        public Command SaveTriggerCommand { get; set; } = new Command(() =>
+/*        public Command SaveTriggerCommand { get; set; } = new Command(() =>
         {
             Debug.WriteLine("Exit Page New Trigger Command");
 
             
 
-            Shell.Current.Navigation.PopAsync();
+            //Shell.Current.Navigation.PopAsync();
 
-            /*var navigationParameter = new Dictionary<string, object>
+            *//*var navigationParameter = new Dictionary<string, object>
             {
                 { "isNewTrigger", true }
             };
-            Shell.Current.GoToAsync($"CreateNewTriggerPage", navigationParameter);*/
-        });
+            Shell.Current.GoToAsync($"CreateNewTriggerPage", navigationParameter);*//*
+        });*/
 
         public CreateNewTriggerViewModel()
         {

@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-11-05T11:09:08.866</Modified>
+      <Modified>2022-11-10T07:40:54.142</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-11-05T10:46:02.470</Modified>
+      <Modified>2022-11-10T05:57:13.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\TS2_Control_Panel.runtimeconfig.json">
       <PackagePath>TS2_Control_Panel.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\TS2_Control_Panel.dll">
       <PackagePath>TS2_Control_Panel.dll</PackagePath>
-      <Modified>2022-11-05T11:09:07.119</Modified>
+      <Modified>2022-11-10T07:40:51.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>TS2_Control_Panel.exe</PackagePath>
-      <Modified>2022-11-05T11:09:07.205</Modified>
+      <Modified>2022-11-10T07:40:51.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.10\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1067,7 +1067,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\TS2_Control_Panel.deps.json">
       <PackagePath>TS2_Control_Panel.deps.json</PackagePath>
-      <Modified>2022-11-05T11:09:08.667</Modified>
+      <Modified>2022-11-10T07:40:53.828</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\.nuget\packages\microsoft.maui.controls.ref.win\6.0.540\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1123,147 +1123,163 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2022-11-03T03:56:10.955</Modified>
+      <Modified>2022-11-09T16:29:26.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.160</Modified>
+      <Modified>2022-11-09T16:29:27.228</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.173</Modified>
+      <Modified>2022-11-09T16:29:27.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.183</Modified>
+      <Modified>2022-11-09T16:29:27.254</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.199</Modified>
+      <Modified>2022-11-09T16:29:27.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.260</Modified>
+      <Modified>2022-11-09T16:29:27.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.965</Modified>
+      <Modified>2022-11-09T16:29:27.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.969</Modified>
+      <Modified>2022-11-09T16:29:27.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.974</Modified>
+      <Modified>2022-11-09T16:29:27.024</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.978</Modified>
+      <Modified>2022-11-09T16:29:27.029</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.983</Modified>
+      <Modified>2022-11-09T16:29:27.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.041</Modified>
+      <Modified>2022-11-09T16:29:27.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.047</Modified>
+      <Modified>2022-11-09T16:29:27.108</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.055</Modified>
+      <Modified>2022-11-09T16:29:27.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.064</Modified>
+      <Modified>2022-11-09T16:29:27.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.082</Modified>
+      <Modified>2022-11-09T16:29:27.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.013</Modified>
+      <Modified>2022-11-09T16:29:27.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.017</Modified>
+      <Modified>2022-11-09T16:29:27.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.022</Modified>
+      <Modified>2022-11-09T16:29:27.077</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.027</Modified>
+      <Modified>2022-11-09T16:29:27.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.036</Modified>
+      <Modified>2022-11-09T16:29:27.092</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.988</Modified>
+      <Modified>2022-11-09T16:29:27.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.992</Modified>
+      <Modified>2022-11-09T16:29:27.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.996</Modified>
+      <Modified>2022-11-09T16:29:27.048</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.001</Modified>
+      <Modified>2022-11-09T16:29:27.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.009</Modified>
+      <Modified>2022-11-09T16:29:27.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.088</Modified>
+      <Modified>2022-11-09T16:29:27.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.096</Modified>
+      <Modified>2022-11-09T16:29:27.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.105</Modified>
+      <Modified>2022-11-09T16:29:27.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.118</Modified>
+      <Modified>2022-11-09T16:29:27.185</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.150</Modified>
+      <Modified>2022-11-09T16:29:27.216</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.jpg">
+      <PackagePath>delete.scale-100.jpg</PackagePath>
+      <Modified>2022-11-09T13:17:13.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete.scale-100.png">
+      <PackagePath>delete.scale-100.png</PackagePath>
+      <Modified>2022-11-09T16:29:08.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2022-11-03T03:56:10.997</Modified>
+      <Modified>2022-11-09T16:29:27.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.007</Modified>
+      <Modified>2022-11-09T16:29:27.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.021</Modified>
+      <Modified>2022-11-09T16:29:27.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.042</Modified>
+      <Modified>2022-11-09T16:29:27.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2022-11-03T03:56:11.090</Modified>
+      <Modified>2022-11-09T16:29:27.162</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.jpg">
+      <PackagePath>edit.scale-100.jpg</PackagePath>
+      <Modified>2022-11-09T13:15:31.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Usr1\source\repos\TS2_Control_Panel\TS2_Control_Panel\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit.scale-100.png">
+      <PackagePath>edit.scale-100.png</PackagePath>
+      <Modified>2022-11-09T16:25:56.345</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
